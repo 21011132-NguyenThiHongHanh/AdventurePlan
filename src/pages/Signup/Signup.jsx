@@ -37,7 +37,7 @@ const Signup = () => {
         await updateProfile(user, { displayName: name });
         toast.success('Success Register!');
         setTimeout(() => {
-          navigateTo('');
+          navigateTo('login');
         }, 2000); // Delay of 2 seconds
       })
       .catch((error) => {
