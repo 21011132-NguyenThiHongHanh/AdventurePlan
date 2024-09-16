@@ -30,6 +30,12 @@
 
     li {
       transition: var(--transition-effect);
+
+      &#username {
+        color: var(--blue-color);
+        font-weight: 600;
+      }
+
       &:hover {
         cursor: pointer;
         color: var(--primary-color-hover);

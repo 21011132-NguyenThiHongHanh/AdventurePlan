@@ -8,10 +8,17 @@ import { signOut, onAuthStateChanged } from 'firebase/auth';
 const Navbar = () => {
   const navigateTo = useCustomNavigate();
   const [logged, setLogged] = useState(false);
+  const [userName, setUserName] = useState('');
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setLogged(!!user);
+      if (user) {
+        setLogged(true);
+        setUserName(user.displayName || ''); // Get the displayName or fallback to an empty string
+      } else {
+        setLogged(false);
+        setUserName('');
+      }
     });
     return () => unsubscribe();
   }, []);
@@ -20,6 +27,7 @@ const Navbar = () => {
     signOut(auth)
       .then(() => {
         setLogged(false);
+        setUserName('');
         navigateTo('');
       })
       .catch((error) => {
@@ -29,7 +37,10 @@ const Navbar = () => {
 
   const renderAuthLinks = () => {
     return logged ? (
-      <li onClick={handleSignOut}>Sign out</li>
+      <>
+        <li id="username">{userName}</li> {/* Show user name */}
+        <li onClick={handleSignOut}>Sign out</li>
+      </>
     ) : (
       <>
         <li onClick={() => navigateTo('login')}>Sign in</li>
@@ -47,8 +58,8 @@ const Navbar = () => {
         <span onClick={() => navigateTo('')}>AdventurePlan!</span>
       </div>
       <ul className="navigate">
-        <li>About</li>
         {renderAuthLinks()}
+        <li>About</li>
         <li>
           <Button>Get App</Button>
         </li>
