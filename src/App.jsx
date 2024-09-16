@@ -5,6 +5,8 @@ import Signup from './pages/Signup/Signup';
 import TripPlan from './pages/TripPlan/TripPlan';
 import NotFound from './pages/NotFound/NotFound';
 
+import 'react-toastify/dist/ReactToastify.css';
+
 const App = () => {
   return (
     <Router>

@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useCustomNavigate } from '../../utils/navigate';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase/firebase-config';
 import './Login.css';
+import { toast, ToastContainer } from 'react-toastify';
 
 const Login = () => {
   const navigateTo = useCustomNavigate();
@@ -10,13 +11,23 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
+  useEffect(() => {
+    if (error) {
+      toast.error(error);
+      setError('');
+    }
+  }, [error]);
+
   const handleLogin = (e) => {
     e.preventDefault();
 
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log(userCredential);
-        navigateTo('');
+        toast.success('Success Login');
+        setTimeout(() => {
+          navigateTo('');
+        }, 2000);
       })
       .catch((error) => {
         setError(error.message);
@@ -52,6 +63,8 @@ const Login = () => {
         </form>
         <img src="/images/avt3.jpg" alt="" />
       </div>
+
+      <ToastContainer />
     </div>
   );
 };

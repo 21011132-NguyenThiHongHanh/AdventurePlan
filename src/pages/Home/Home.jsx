@@ -5,7 +5,6 @@ import Features from './Features/Features';
 import Intro from './Intro/Intro';
 
 import './Home.css';
-
 const Home = () => {
   return (
     <div className="container">
