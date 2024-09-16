@@ -41,5 +41,8 @@ li {
 
 a {
   color: unset;
-  text-decoration: solid;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }

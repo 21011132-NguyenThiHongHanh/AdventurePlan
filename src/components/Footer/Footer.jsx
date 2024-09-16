@@ -7,28 +7,52 @@ const Footer = () => {
         <div className="list">
           <h4>Company</h4>
           <ul>
-            <li>About Us</li>
-            <li>Careers</li>
-            <li>Press Releases</li>
+            <li>
+              <a href="">About Us</a>
+            </li>
+            <li>
+              <a href="">Careers</a>
+            </li>
+            <li>
+              <a href="">Press Releases</a>
+            </li>
           </ul>
         </div>
         <div className="list">
           <h4>Support</h4>
           <ul>
-            <li>Help Center</li>
-            <li>Contact Us</li>
-            <li>FAQs</li>
-            <li>Shipping Information</li>
-            <li>Returns and Exchanges</li>
+            <li>
+              <a href="">Help Center</a>
+            </li>
+            <li>
+              <a href="">Contact Us</a>
+            </li>
+            <li>
+              <a href="">FAQs</a>
+            </li>
+            <li>
+              <a href="">Shipping Information</a>
+            </li>
+            <li>
+              <a href="">Returns and</a> Exchanges
+            </li>
           </ul>
         </div>
         <div className="list">
           <h4>Services</h4>
           <ul>
-            <li>Consulting</li>
-            <li>Custom Solutions</li>
-            <li>Product Support</li>
-            <li>Training</li>
+            <li>
+              <a href="">Consulting</a>
+            </li>
+            <li>
+              <a href="">Custom Solutions</a>
+            </li>
+            <li>
+              <a href="">Product Support</a>
+            </li>
+            <li>
+              <a href="">Training</a>
+            </li>
           </ul>
         </div>
       </div>

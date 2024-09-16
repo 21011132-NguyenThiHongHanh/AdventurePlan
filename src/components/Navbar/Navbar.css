@@ -11,7 +11,7 @@
   .logo-group {
     display: flex;
     align-items: center;
-    gap: 120px;
+    gap: 80px;
 
     .logo {
       font-weight: 800;

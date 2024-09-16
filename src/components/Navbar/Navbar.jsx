@@ -8,8 +8,10 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo-group">
-        <div className="logo">LOGO</div>
-        <span>AdventurePlan!</span>
+        <div className="logo" onClick={() => navigateTo('')}>
+          LOGO
+        </div>
+        <span onClick={() => navigateTo('')}>AdventurePlan!</span>
       </div>
       <ul className="navigate">
         <li>About</li>
