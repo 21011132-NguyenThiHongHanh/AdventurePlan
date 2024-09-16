@@ -12,7 +12,7 @@ export default [
       ecmaVersion: 2020,
       globals: {
         ...globals.browser,
-        ...globals.node,
+        process: 'readonly', // Khai báo process là biến toàn cục
       },
       parserOptions: {
         ecmaVersion: 'latest',
