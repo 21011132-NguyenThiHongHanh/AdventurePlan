@@ -9,10 +9,11 @@ export default [
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 'latest',
       globals: {
         ...globals.browser,
-        process: 'readonly', // Khai báo process là biến toàn cục
+        // ...globals.node,
+        process: 'readonly',
       },
       parserOptions: {
         ecmaVersion: 'latest',
