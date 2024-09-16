@@ -1,23 +1,52 @@
+import { useState } from 'react';
 import { useCustomNavigate } from '../../utils/navigate';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../../firebase/firebase-config';
 import './Login.css';
 
 const Login = () => {
   const navigateTo = useCustomNavigate();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        console.log(userCredential);
+        navigateTo('');
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
 
   return (
     <div className="wrapper">
       <div className="account">
-        <form action="">
+        <form onSubmit={handleLogin}>
           <h2>Sign in</h2>
-          <input type="email" id="email" placeholder="Enter your email" required />
-          <input type="password" id="password" placeholder="Password" required />
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
           <button type="submit">Confirm</button>
-          <div
-            className="link"
-            onClick={() => {
-              navigateTo('signup');
-            }}
-          >
+          {error && <p className="error">{error}</p>}
+          <div className="link" onClick={() => navigateTo('signup')}>
             Sign up
           </div>
         </form>
