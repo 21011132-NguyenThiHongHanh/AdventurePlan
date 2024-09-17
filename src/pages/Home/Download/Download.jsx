@@ -4,13 +4,11 @@ import Button from '../../../components/Button/Button';
 const Download = () => {
   return (
     <div className="section download">
-      <img src="/images/avt.jpg" alt="" />
+      <img src="/images/avt.png" alt="" />
       <div className="texts">
-        <h3>Download AdventurePlan!</h3>
+        <h3>Tải ngay AdventurePlan!</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem expedita iure, eum adipisci, delectus
-          consectetur et quidem, minima suscipit qui dolor dolorum saepe assumenda soluta deleniti inventore.
-          Perspiciatis, rem eveniet.
+        Đừng chần chừ nữa! Hãy tải ngay AdventurePlan! trên App Store hoặc Google Play để bắt đầu hành trình khám phá của bạn!
         </p>
         <Button>Get Started</Button>
       </div>

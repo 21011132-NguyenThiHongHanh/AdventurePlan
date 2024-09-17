@@ -4,10 +4,10 @@ const Intro = () => {
   return (
     <div className="section intro">
       <div className="texts">
-        <h3>Introduction AdventurePlan!</h3>
+        <h3>Giới thiệu về AdventurePlan!</h3>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, vitae voluptatibus! Ducimus laborum error
-          iste commodi animi aliquam, sequi, minus totam excepturi neque cumque exercitationem.
+        Chào mừng bạn đến vớ - AdventurePlan! - ứng dụng gợi ý lịch trình du lịch thông minh,
+        giúp bạn khám phá thế giới một cách dễ dàng và thú vị hơn bao giờ hết!
         </p>
         <Button>Download</Button>
       </div>

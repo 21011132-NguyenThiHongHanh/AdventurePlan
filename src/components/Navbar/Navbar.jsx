@@ -53,7 +53,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="logo-group">
         <div className="logo" onClick={() => navigateTo('')}>
-          LOGO
+        <img src="/images/logo.png" alt="" />
         </div>
         <span onClick={() => navigateTo('')}>AdventurePlan!</span>
       </div>

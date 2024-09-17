@@ -5,21 +5,21 @@ const Footer = () => {
     <div className="footer">
       <div className="url">
         <div className="list">
-          <h4>Company</h4>
+          <h4>COMPANY</h4>
           <ul>
             <li>
-              <a href="">About Us</a>
+              <a href="">How it works</a>
             </li>
             <li>
-              <a href="">Careers</a>
+              <a href="">Pricing</a>
             </li>
             <li>
-              <a href="">Press Releases</a>
+              <a href="">Demo</a>
             </li>
           </ul>
         </div>
         <div className="list">
-          <h4>Support</h4>
+          <h4>RESOURCES</h4>
           <ul>
             <li>
               <a href="">Help Center</a>
@@ -39,7 +39,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="list">
-          <h4>Services</h4>
+          <h4>DEMO</h4>
           <ul>
             <li>
               <a href="">Consulting</a>
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="copyright">Copyright © 2022-2024 AnhCBT. All Rights Reserved</div>
+      <div className="copyright">Copyright ©2024 Teams 02. All Rights Reserved</div>
     </div>
   );
 };

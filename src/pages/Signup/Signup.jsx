@@ -88,7 +88,7 @@ const Signup = () => {
               Sign in
             </div>
           </form>
-          <img src="/images/avt2.jpg" alt="" />
+          <img src="/images/avt3.png" alt="" />
         </div>
       </div>
       <ToastContainer />

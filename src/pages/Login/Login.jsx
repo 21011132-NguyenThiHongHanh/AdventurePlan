@@ -61,7 +61,7 @@ const Login = () => {
             Sign up
           </div>
         </form>
-        <img src="/images/avt3.jpg" alt="" />
+        <img src="/images/avt3.png" alt="" />
       </div>
 
       <ToastContainer />
