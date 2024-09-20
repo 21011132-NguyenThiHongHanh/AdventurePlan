@@ -45,6 +45,7 @@ const Navbar = () => {
       <>
         <li onClick={() => navigateTo('login')}>Sign in</li>
         <li onClick={() => navigateTo('signup')}>Sign up</li>
+        <li onClick={() => navigateTo('tripplan')}>Plan</li>
       </>
     );
   };
@@ -59,7 +60,6 @@ const Navbar = () => {
       </div>
       <ul className="navigate">
         {renderAuthLinks()}
-        <li>About</li>
         <li>
           <Button>Get App</Button>
         </li>
