@@ -164,7 +164,75 @@
         }
 
         .listPlan{
-            
+            width: 900px;
+            margin-top:50px;
+
+            .block{
+                margin: 50px 0 0 200px;
+                padding-bottom: 10px;
+                padding: 25px;
+                box-shadow: 0 0 10px rgb(218, 216, 216);
+
+                p{
+                    font-size:28px;
+                    font-weight:bold;
+                }
+    
+                .item{
+                    display: flex;
+                    padding: 25px 0;
+                    border-bottom: 1px solid #ccc;
+    
+                    .title{
+                        display: flex;
+                        padding-right: 125px;
+                        border-right: 1px solid #ccc;
+    
+                        .time{
+                            width: 100px;
+                            height: 42px;
+                            border-radius: 20px;
+                            border: 1px solid #356bd6;
+                            line-height: 42px;
+                            text-align: center;
+                            font-weight: 500;
+                        }
+    
+                        .active{
+                            .name{
+                                font-size:24px;
+                                font-weight:bold;
+                            }
+    
+                            .des{
+                                color: #356BD6;
+                            }
+                        }
+                    }
+    
+                    .info{
+                        padding-left: 25px;
+    
+                        p img {
+                            vertical-align: middle;
+                        }
+    
+                        p{
+                            height: 38px;
+                            line-height: 38px;
+                            font-size: 18px;
+                            font-weight: normal;
+                            color: #356BD6;
+    
+                            img{
+                                width: 30px;
+                                height: 30px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 

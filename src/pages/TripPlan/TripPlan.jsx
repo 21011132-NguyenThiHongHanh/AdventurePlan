@@ -47,14 +47,98 @@ const TripPlan = () => {
             <button><img src="./images/search.png" alt="" /></button>
           </div>
         </div>
-        {/* <div className="listPlan">
+        <div className="listPlan">
           <div className="block">
             <p>Day 1:</p>
-            <div className="item"></div>
-            <div className="item"></div>
-            <div className="item"></div>
+            <div className="item">
+              <div className="title">
+                <div className="time">6 A.M</div>
+                <div className="active">
+                  <div className="name">Breakfast at Luzzy</div>
+                  <div className="des">Descriptions</div>
+                </div>
+              </div>
+              <div className="info">
+                <p><img src="./images/value.png" alt="" />20000VND</p>
+                <p><img src="./images/time.png" alt="" />1h</p>
+                <p><img src="./images/transport.png" alt="" />Travels by taxi</p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="title">
+                <div className="time">6 A.M</div>
+                <div className="active">
+                  <div className="name">Breakfast at Luzzy</div>
+                  <div className="des">Descriptions</div>
+                </div>
+              </div>
+              <div className="info">
+                <p><img src="./images/value.png" alt="" />20000VND</p>
+                <p><img src="./images/time.png" alt="" />1h</p>
+                <p><img src="./images/transport.png" alt="" />Travels by taxi</p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="title">
+                <div className="time">6 A.M</div>
+                <div className="active">
+                  <div className="name">Breakfast at Luzzy</div>
+                  <div className="des">Descriptions</div>
+                </div>
+              </div>
+              <div className="info">
+                <p><img src="./images/value.png" alt="" />20000VND</p>
+                <p><img src="./images/time.png" alt="" />1h</p>
+                <p><img src="./images/transport.png" alt="" />Travels by taxi</p>
+              </div>
+            </div>
           </div>
-        </div> */}
+          <div className="block">
+            <p>Day 1:</p>
+            <div className="item">
+              <div className="title">
+                <div className="time">6 A.M</div>
+                <div className="active">
+                  <div className="name">Breakfast at Luzzy</div>
+                  <div className="des">Descriptions</div>
+                </div>
+              </div>
+              <div className="info">
+                <p><img src="./images/value.png" alt="" />20000VND</p>
+                <p><img src="./images/time.png" alt="" />1h</p>
+                <p><img src="./images/transport.png" alt="" />Travels by taxi</p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="title">
+                <div className="time">6 A.M</div>
+                <div className="active">
+                  <div className="name">Breakfast at Luzzy</div>
+                  <div className="des">Descriptions</div>
+                </div>
+              </div>
+              <div className="info">
+                <p><img src="./images/value.png" alt="" />20000VND</p>
+                <p><img src="./images/time.png" alt="" />1h</p>
+                <p><img src="./images/transport.png" alt="" />Travels by taxi</p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="title">
+                <div className="time">6 A.M</div>
+                <div className="active">
+                  <div className="name">Breakfast at Luzzy</div>
+                  <div className="des">Descriptions</div>
+                </div>
+              </div>
+              <div className="info">
+                <p><img src="./images/value.png" alt="" />20000VND</p>
+                <p><img src="./images/time.png" alt="" />1h</p>
+                <p><img src="./images/transport.png" alt="" />Travels by taxi</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
