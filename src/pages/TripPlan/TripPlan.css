@@ -185,7 +185,7 @@
     
                     .title{
                         display: flex;
-                        padding-right: 125px;
+                        padding-right: 115px;
                         border-right: 1px solid #ccc;
     
                         .time{
@@ -196,6 +196,7 @@
                             line-height: 42px;
                             text-align: center;
                             font-weight: 500;
+                            margin-right: 15px;
                         }
     
                         .active{
